@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git-cz",
-    "release": "standard-version"
+    "release": "standard-version",
+    "commitmsg": "validate-commit-msg"
   },
   "repository": {
     "type": "git",
@@ -34,5 +35,23 @@
   },
   "dependencies": {
     "validate-commit-message": "^3.0.1"
+  },
+  "validate-commit-msg": {
+    "types": [
+      "feat",
+      "fix",
+      "docs",
+      "style",
+      "refactor",
+      "perf",
+      "test",
+      "chore",
+      "revert"
+    ],
+    "warnOnFail": false,
+    "maxSubjectLength": 100,
+    "subjectPattern": "^[A-Z]+-[0-9]+ - .*",
+    "subjectPatternErrorMsg": "Subject must be in format 'CMS-123 - Commit message'",
+    "helpMessage": ""
   }
 }
