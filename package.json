@@ -1,6 +1,6 @@
 {
   "name": "semantic",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -31,5 +31,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "validate-commit-message": "^3.0.1"
   }
 }
